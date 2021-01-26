@@ -87,9 +87,9 @@ export default function ContributorsPage({ contributors }) {
 
 
 export async function getStaticProps() {
-  const contributors = fs.readdirSync('./contribuidores').map((fileName) => {
+  const contributors = fs.readdirSync('./contributors').map((fileName) => {
     const [user, projectUrl] = fs
-      .readFileSync(`./contribuidores/${fileName}`, { encoding: 'utf-8' })
+      .readFileSync(`./contributors/${fileName}`, { encoding: 'utf-8' })
       .split('\n');
 
     return {
