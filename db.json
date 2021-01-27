@@ -5,7 +5,7 @@
     "description": "Teste seus conhecimentos de porcentagem e veja quantos porcentos você está perdido!",
     "questions": [
       {
-        "image": "https://cdn.pixabay.com/photo/2016/11/27/21/42/stock-1863880_960_720.jpg" ,
+        "image": "/stock-1863880_960_720.webp" ,
         "title": "Lucro e prejuízo",
         "description": "Você investiu R$ 100,00 em algum investimento diário. Em uma dia lucrou 10% e no outro teve prejuízo de 10%. No final desses dois dias você obteve ...",
         "answer": 2,
@@ -18,7 +18,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/26gR0YFZxWbnUPtMA/giphy.gif",
+        "image": "/muse-in-color-1440069-639x424.jpg",
         "title": "De cabeça essa!",
         "description": "Quanto fica R$ 100,00 mais 20% e finalmente mais 10%? ",
         "answer": 1,
@@ -31,7 +31,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/l4EoPhbE7iS65kuti/giphy.gif",
+        "image": "/measuring-cup-1327009.jpg",
         "title": "Equivalência fracionária",
         "description": "Uma valor mais seus 33% é igual a ...",
         "answer": 3,
@@ -57,7 +57,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/W2bepwxaIJDt6VKfhN/giphy.gif",
+        "image": "/safe-piggy-bank-1237063-639x427.jpg",
         "title": "Quanto eu tinha?",
         "description": "Ao final de 4 meses em um investimento que rendeu 10%, 20%, 30% e 40% eu tenho R$ 28.69. Qual foi meu investimento inicial? ",
         "answer": 1,
