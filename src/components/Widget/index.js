@@ -26,7 +26,10 @@ const Widget = styled.div`
   button, input{
     width: 100%;
     line-height: 2;
-    overflow-x: clip;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 1em;
   }
   button {
     color: ${({ theme }) => theme.colors.contrastText}; 
@@ -34,11 +37,8 @@ const Widget = styled.div`
     border: 0px ${({ theme }) => theme.colors.primary} solid ;  
     padding: 5px;  
   }
-  button:disabled {
-    color: ${({ theme }) => theme.colors.contrastText}; 
-    background-color: ${({ theme }) => theme.colors.primary};
-    border: 0px ${({ theme }) => theme.colors.primary} solid ;  
-    padding: 5px;  
+  button:disabled, button[disabled] {
+    color: ${({ theme }) => theme.colors.disabled}; 
   }
   input {
     border: 0px ${({ theme }) => theme.colors.primary} solid ;   
