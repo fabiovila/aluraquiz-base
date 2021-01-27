@@ -6,6 +6,7 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
+import Spinner from '../src/components/Spinner';
 
 function LoadingWidget() {
   return (
@@ -15,7 +16,7 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        <Spinner src="/spinner2.gif" />
       </Widget.Content>
     </Widget>
   );

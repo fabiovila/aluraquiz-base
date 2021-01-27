@@ -3,13 +3,10 @@ import styled from 'styled-components';
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 5px solid ${({ theme }) => theme.colors.primary};
-  -moz-border-image: -moz-linear-gradient(top, ${({ theme }) => theme.colors.primary} 30%, ${({ theme }) => theme.colors.mainBg} 80%); 
-	-webkit-border-image: -webkit-linear-gradient(top, ${({ theme }) => theme.colors.primary} 30%, ${({ theme }) => theme.colors.mainBg} 80%); 
-	border-image: linear-gradient(to bottom, ${({ theme }) => theme.colors.primary} 30%, ${({ theme }) => theme.colors.mainBg} 80%);
-	border-image-slice: 1;
+  border: 1px solid ${({ theme }) => `${theme.colors.primary}20`};
+
   background-color: ${({ theme }) => theme.colors.mainBg};
-  /* border-radius: 5px; */
+   border-radius: 5px; 
   overflow: hidden;
   box-shadow: 5px 5px 5px #00000099;
 
@@ -83,10 +80,11 @@ Widget.Content = styled.div`
 `;
 
 Widget.Topic = styled.a`
+  font-size: 13px;
   outline: 0;
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.contrastText};
-  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  color: ${({ theme }) => theme.colors.contrastText}90;
+  background-color: ${({ theme }) => `${theme.colors.alternatives}40`};
   padding: 10px 15px;
   margin-bottom: 8px;
   cursor: pointer;
@@ -96,7 +94,8 @@ Widget.Topic = styled.a`
   
   &:hover,
   &:focus {
-    opacity: .5;
+    /* opacity: .5; */
+    background-color: ${({ theme }) => `${theme.colors.primary}95`};
   }
 `;
 

@@ -1,11 +1,11 @@
 {
     "bg": "/back.png",
-    "ogimg":"/ogimg.png",
+    "ogimg":"/ogimg.jpg",
     "title": "Voce sabe porcentagem?",
     "description": "Teste seus conhecimentos de porcentagem e veja quantos porcentos você está perdido!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/W2bepwxaIJDt6VKfhN/giphy.gif" ,
+        "image": "https://cdn.pixabay.com/photo/2016/11/27/21/42/stock-1863880_960_720.jpg" ,
         "title": "Lucro e prejuízo",
         "description": "Você investiu R$ 100,00 em algum investimento diário. Em uma dia lucrou 10% e no outro teve prejuízo de 10%. No final desses dois dias você obteve ...",
         "answer": 2,
@@ -94,10 +94,11 @@
         "secondary": "#00180f55",
         "mainBg": "#00180f55",
         "contrastText": "#FFFFFF",
+        "alternatives": "#000000",
         "wrong": "#FF5722",
         "success": "#4CAF50",
         "disabled": "#FFFFFF33"
       },
-      "borderRadius": "1px"
+      "borderRadius": "5px"
     }
   }
