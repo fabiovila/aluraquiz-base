@@ -1,6 +1,6 @@
 {
     "bg": "/back.png",
-    "ogimg":"/back.png",
+    "ogimg":"/ogimg.png",
     "title": "Voce sabe porcentagem?",
     "description": "Teste seus conhecimentos de porcentagem e veja quantos porcentos você está perdido!",
     "questions": [
