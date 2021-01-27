@@ -1,24 +1,24 @@
 {
     "bg": "/back.png",
-    "widgetsplash" : "/vamos.png",
-    "ogimg":"/ogimg.png",
+    "ogimg":"/back.png",
     "title": "Voce sabe porcentagem?",
     "description": "Teste seus conhecimentos de porcentagem e veja quantos porcentos você está perdido!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "image": "https://media.giphy.com/media/8Vrefmr1uZZa8/giphy.gif",
+        "title": "Lucro e prejuízo",
+        "description": "Você investiu R$ 100,00 em algum investimento diário. Em uma dia lucrou 10% e no outro teve prejuízo de 10%. No final desses dois dias você obteve ...",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Lucro. Tenho mais de R$ 100,00.",
+          "Zero a Zero. Continuo com meus R$ 100,00.",
+          "Prejuízo. Tenho menos de R$ 100,00.",
+          "R$ 101,00 no final dos dois dias.",
+          "R$ 90,00 no final dos dois dias"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "image": "https://media.giphy.com/media/26gR0YFZxWbnUPtMA/giphy.gif",
         "title": "Como fazer um background gradiente com css?",
         "description": "Faz tempo em haha",
         "answer": 0,
