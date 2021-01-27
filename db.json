@@ -5,7 +5,7 @@
     "description": "Teste seus conhecimentos de porcentagem e veja quantos porcentos você está perdido!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/8Vrefmr1uZZa8/giphy.gif",
+        "image": "https://media.giphy.com/media/W2bepwxaIJDt6VKfhN/giphy.gif" ,
         "title": "Lucro e prejuízo",
         "description": "Você investiu R$ 100,00 em algum investimento diário. Em uma dia lucrou 10% e no outro teve prejuízo de 10%. No final desses dois dias você obteve ...",
         "answer": 2,
@@ -42,7 +42,48 @@
            "Multiplicar o valor por 1.33",
            "Multiplicar o valor por 1 / 33"
         ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3ohc0ZJB9s5fhqyZyw/giphy.gif",
+        "title": "Equivalência",
+        "description": "1 + 11/100 é equivalente a:",
+        "answer": 4,
+        "alternatives": [
+           "11% + 1%",
+           "11%",
+           "90%",
+           "12%",
+           "111%"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/W2bepwxaIJDt6VKfhN/giphy.gif",
+        "title": "Quanto eu tinha?",
+        "description": "Ao final de 4 meses em um investimento que rendeu 10%, 20%, 30% e 40% eu tenho R$ 28.69. Qual foi meu investimento inicial? ",
+        "answer": 1,
+        "alternatives": [
+           "R$ 20,00",
+           "R$ 26,00",
+           "R$ 25,00",
+           "R$ 28,00",
+           "R$ 10,00"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/xT5LMUv1JAxBiCft4I/giphy.gif",
+        "title": "É fácil de resolver?",
+        "description": "30% do seus usuários abandonam o site antes de completar o formulário.",
+        "answer": 3,
+        "alternatives": [
+           "Em um dia com 500 visitas perdi 155 usuários.",
+           "Se eu melhorar essa taxa em 5%, 27,5% dos usuários abandonarão.",
+           "Os logs mostram 156 pessoas que abandonaram, logo minhas visitas foram de 620.",
+           "Tive sucesso com 70% dos usuários.",
+           "Nenhuma das anteriores"
+        ]
       }
+
+
     ],
     "external": [
       ""
@@ -50,13 +91,13 @@
     "theme": {
       "colors": {
         "primary": "#fd5817",
-        "secondary": "#00180f",
-        "mainBg": "#00180f",
+        "secondary": "#00180f55",
+        "mainBg": "#00180f55",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",
         "success": "#4CAF50",
         "disabled": "#FFFFFF33"
       },
-      "borderRadius": "4px"
+      "borderRadius": "1px"
     }
   }
