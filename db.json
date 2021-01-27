@@ -19,12 +19,28 @@
       },
       {
         "image": "https://media.giphy.com/media/26gR0YFZxWbnUPtMA/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "title": "De cabeça essa!",
+        "description": "Quanto fica R$ 100,00 mais 20% e finalmente mais 10%? ",
+        "answer": 1,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "R$ 130,00",
+           "R$ 132,00",
+           "R$ 120,00",
+           "R$ 121,00",
+           "R$ 133,20"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l4EoPhbE7iS65kuti/giphy.gif",
+        "title": "Equivalência fracionária",
+        "description": "Uma valor mais seus 33% é igual a ...",
+        "answer": 3,
+        "alternatives": [
+           "Multiplicar o valor por 0.33",
+           "Multiplicar o valor por 33/100",
+           "Multiplicar o valor por (1 + 33)",
+           "Multiplicar o valor por 1.33",
+           "Multiplicar o valor por 1 / 33"
         ]
       }
     ],
