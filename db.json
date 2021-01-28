@@ -81,6 +81,19 @@
            "Tive sucesso com 70% dos usuários.",
            "Nenhuma das anteriores"
         ]
+      },
+      {
+        "image": "https://media.giphy.com/media/26gR0YFZxWbnUPtMA/giphy.gif",
+        "title": "De cabeça!",
+        "description": "3 é quantos porcentos de 7?",
+        "answer": 2,
+        "alternatives": [
+           "40%",
+           "35%",
+           "42%",
+           "23%",
+           "39%"
+        ]
       }
 
 

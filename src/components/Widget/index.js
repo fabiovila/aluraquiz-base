@@ -84,14 +84,13 @@ Widget.Topic = styled.a`
   outline: 0;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.contrastText}90;
-  background-color: ${({ theme }) => `${theme.colors.alternatives}40`};
+  background-color: #00000040;
   padding: 10px 15px;
   margin-bottom: 8px;
   cursor: pointer;
   border-radius: ${({ theme }) => theme.borderRadius};
   transition: .3s;
-  display: block;
-  
+  display: block;  
   &:hover,
   &:focus {
     /* opacity: .5; */

@@ -106,9 +106,9 @@ function QuestionWidget({
             setIsQuestionSubmited(true);
             setTimeout(() => {
               addResult(isCorrect);
-              // setIsQuestionSubmited(false);
-              // setSelectedAlternative(undefined);
-              // onSubmit();
+              setIsQuestionSubmited(false);
+              setSelectedAlternative(undefined);
+              onSubmit();
             }, 3 * 1000);
           }}
         >
