@@ -53,6 +53,16 @@ export default function App({ Component, pageProps }) {
         <meta property="twitter:title" content="Quiz Porcentagem" />
         <meta property="twitter:description" content="Quiz sobre Porcentagem.Você tem 100% de certeza que conhece porcentagem?" />
         <meta property="twitter:image" content="/ogimg.jpg" />
+        {`
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZMM86172X"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-WZMM86172X');
+        </script>
+        `}
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
