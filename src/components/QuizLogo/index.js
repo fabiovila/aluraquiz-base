@@ -12,7 +12,7 @@ const QuizImg = styled.div`
 
 function QuizLogo() {
   return (
-    <div><QuizImg><img src="/100.png" alt="" /></QuizImg></div>
+    <div><QuizImg><a href="/"><img src="/100.png" alt="" /></a></QuizImg></div>
   );
 }
 export default QuizLogo;
