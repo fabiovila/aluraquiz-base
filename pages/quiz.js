@@ -106,15 +106,15 @@ function QuestionWidget({
             setIsQuestionSubmited(true);
             setTimeout(() => {
               addResult(isCorrect);
-              //setIsQuestionSubmited(false);
-              //setSelectedAlternative(undefined);
-              //onSubmit();
+              // setIsQuestionSubmited(false);
+              // setSelectedAlternative(undefined);
+              // onSubmit();
             }, 3 * 1000);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
             const alternativeId = `alternative__${alternativeIndex}`;
-            const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
+            const alternativeStatus = isCorrect ? 'SUCCESS' : (alternativeIndex === question.answer ? 'CORRECT' : 'ERROR');
             const isSelected = selectedAlternative === alternativeIndex;
             return (
               <Widget.Topic
@@ -140,7 +140,7 @@ function QuestionWidget({
           {/* <pre>
             {JSON.stringify(question, null, 1)}
           </pre> */}
-          <Button type="submit" disabled={!hasAlternativeSelected}>
+          <Button type="submit" disabled={!hasAlternativeSelected || isQuestionSubmited}>
             Confirmar
           </Button>
           {/* {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
