@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useRouter } from 'next/router';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
@@ -15,17 +16,19 @@ function LoadingWidget() {
       <Widget.Header>
         Seu resultado
       </Widget.Header>
-      <BoxBlink color={db.theme.colors.alternatives} height="150px" />
+      <BoxBlink color={db.theme.colors.wrong} height="150px" />
       <Widget.Content>
-        <BoxBlink color={db.theme.colors.alternatives} />
-        <BoxBlink color={db.theme.colors.alternatives} width="50%" />
-        <BoxBlink color={db.theme.colors.alternatives} width="50%" />
+        <BoxBlink color={db.theme.colors.wrong} />
+        <BoxBlink color={db.theme.colors.wrong} width="50%" />
+        <BoxBlink color={db.theme.colors.wrong} width="50%" />
       </Widget.Content>
     </Widget>
   );
 }
 
 function ResultWidget({ results }) {
+  const router = useRouter().query;
+  const queryName = Object.is(router.name, undefined) ? '' : router.name;
   return (
     <Widget>
       <Widget.Header>
@@ -33,6 +36,7 @@ function ResultWidget({ results }) {
       </Widget.Header>
 
       <Widget.Content>
+        <h1>Resultado de {queryName}</h1>
         <h1>
           {' '}
           Respostas corretas:
@@ -105,10 +109,10 @@ function QuestionWidget({
             infosDoEvento.preventDefault();
             setIsQuestionSubmited(true);
             setTimeout(() => {
+              onSubmit();
               addResult(isCorrect);
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-              onSubmit();
             }, 3 * 1000);
           }}
         >

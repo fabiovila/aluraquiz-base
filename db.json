@@ -11,7 +11,7 @@
         "answer": 2,
         "alternatives": [
           "Lucro. Tenho mais de R$ 100,00.",
-          "Zero a Zero. Continuo com meus R$ 100,00.",
+          "Continuo com meus R$ 100,00.",
           "Prejuízo. Tenho menos de R$ 100,00.",
           "R$ 101,00 no final dos dois dias.",
           "R$ 90,00 no final dos dois dias"
@@ -20,7 +20,7 @@
       {
         "image": "/muse-in-color-1440069-639x424.jpg",
         "title": "De cabeça essa!",
-        "description": "Quanto fica R$ 100,00 mais 20% e finalmente mais 10%? ",
+        "description": "Quanto ficam R$ 100,00 mais 20% e finalmente mais 10%? ",
         "answer": 1,
         "alternatives": [
            "R$ 130,00",
@@ -94,6 +94,45 @@
            "23%",
            "39%"
         ]
+      },
+      {
+        "image": "https://media.giphy.com/media/26gR0YFZxWbnUPtMA/giphy.gif",
+        "title": "Essas vírgulas!",
+        "description": "Quanto é 20% vezes 20%?",
+        "answer": 3,
+        "alternatives": [
+           "40%",
+           "0,04%",
+           "0,4%",
+           "4%",
+           "24%"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/26gR0YFZxWbnUPtMA/giphy.gif",
+        "title": "Saldo negativo.",
+        "description": "Seu saldo no banco é de negativo em R$ 120,00 (-120,00). Depositaram 25% desse valor na sua conta. O saldo final é de:",
+        "answer": 0,
+        "alternatives": [
+           "R$ -30,00",
+           "R$ -20,00",
+           "R$ -100,00",
+           "R$ -60,00",
+           "R$ -25,00"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/26gR0YFZxWbnUPtMA/giphy.gif",
+        "title": "Você foi bem?",
+        "description": "As chances de você acerta uma questão respondendo aleatóriamente é de",
+        "answer": 4,
+        "alternatives": [
+           "15%",
+           "33%",
+           "5%",
+           "1%",
+           "20%"
+        ]
       }
 
 
@@ -107,8 +146,7 @@
         "secondary": "#00180f55",
         "mainBg": "#00150e",
         "contrastText": "#FFFFFF",
-        "alternatives": "#000000",
-        "wrong": "#FF5722",
+        "wrong": "#000000",
         "success": "#4CAF50",
         "disabled": "#FFFFFF33"
       },
