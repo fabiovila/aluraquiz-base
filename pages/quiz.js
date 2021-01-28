@@ -14,7 +14,9 @@ function LoadingWidget() {
       <Widget.Header>
         Carregando...
       </Widget.Header>
-      <BoxBlink color={db.theme.colors.alternatives} height="150px" />
+      <BoxBlink color={db.theme.colors.alternatives} />
+      <BoxBlink color={db.theme.colors.alternatives} width="50%" />
+      <BoxBlink color={db.theme.colors.alternatives} width="50%" />
       <Widget.Content>
         <BoxBlink color={db.theme.colors.alternatives} />
         <BoxBlink color={db.theme.colors.alternatives} width="50%" />
