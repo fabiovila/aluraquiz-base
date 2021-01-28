@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 const BoxBlink = styled.div`
 @keyframes blinker {
   50% {
@@ -13,14 +12,13 @@ min-height: ${(props) => props.height};
 background-color: ${(props) => props.color};
 border-radius: ${(props) => props.radius};
 margin-bottom: 1em;
-`
+`;
 
 export default BoxBlink;
 
-
 BoxBlink.defaultProps = {
-    color: '#ddd',
-    width: '100%',
-    height: '1.1em',
-    radius: '4px'
-}
+  color: '#ddd',
+  width: '100%',
+  height: '1.1em',
+  radius: '4px',
+};

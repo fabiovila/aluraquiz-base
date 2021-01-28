@@ -97,6 +97,9 @@ Widget.Topic = styled.a`
     /* opacity: .5; */
     background-color: ${({ theme }) => `${theme.colors.primary}95`};
   }
+  &:checked + a{
+    background-color: ${({ theme }) => `${theme.colors.primary}95`};
+  }
 `;
 
 export default Widget;
