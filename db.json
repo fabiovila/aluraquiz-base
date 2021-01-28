@@ -138,7 +138,9 @@
 
     ],
     "external": [
-      ""
+      "https://countriesquiz.campodegelo.vercel.app/",
+      "https://alura-quiz-imersao-react.luizaacampos.vercel.app/",
+      "https://aluraquiz-coffee.leonardot07.vercel.app/"
     ],
     "theme": {
       "colors": {

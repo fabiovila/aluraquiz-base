@@ -13,6 +13,7 @@ import QuizContainer from '../src/components/QuizContainer';
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
+  const [quizes] = React.useState(db.external);
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
@@ -43,6 +44,11 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1>Quizes da galera</h1>
+            
+            {/* {quizes.map((link, index) =>(
+              <Button>{link}</Button>
+            ))} */}
+            
           </Widget.Content>
         </Widget>
         <Footer />
