@@ -6,7 +6,7 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
-import Spinner from '../src/components/Spinner';
+import BoxBlink from '../src/components/BoxBlink';
 
 function LoadingWidget() {
   return (
@@ -14,9 +14,11 @@ function LoadingWidget() {
       <Widget.Header>
         Carregando...
       </Widget.Header>
-
+      <BoxBlink color={db.theme.colors.alternatives} height="150px" />
       <Widget.Content>
-        <Spinner src="/spinner2.gif" />
+        <BoxBlink color={db.theme.colors.alternatives} />
+        <BoxBlink color={db.theme.colors.alternatives} width="50%" />
+        <BoxBlink color={db.theme.colors.alternatives} width="50%" />
       </Widget.Content>
     </Widget>
   );
