@@ -52,7 +52,7 @@ export default function Home() {
                   .split('.');
                 return (
                   <li>
-                    <Widget.Topic href={linkExterno}>
+                    <Widget.Topic href={`/quiz/${projectName}___${githubUser}`}>
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>
                   </li>

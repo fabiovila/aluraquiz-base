@@ -10,7 +10,7 @@ import Button from '../../Button';
 import BoxBlink from '../../BoxBlink';
 import AlternativesForm from '../../AlternativesForm';
 
-function LoadingWidget({externalQuestions}) {
+function LoadingWidget({ externalQuestions }) {
   return (
     <Widget>
       <Widget.Header>
