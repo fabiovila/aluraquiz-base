@@ -9,6 +9,7 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
 import QuizContainer from '../src/components/QuizContainer';
+import Link from '../src/components/Link';
 
 export default function Home() {
   const router = useRouter();
@@ -52,7 +53,10 @@ export default function Home() {
                   .split('.');
                 return (
                   <li>
-                    <Widget.Topic href={`/quiz/${projectName}___${githubUser}`}>
+                    <Widget.Topic
+                      as={Link}
+                      href={`/quiz/${projectName}___${githubUser}`}
+                    >
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>
                   </li>

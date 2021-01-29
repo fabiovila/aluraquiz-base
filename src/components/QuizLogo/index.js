@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
+import Link from '../Link';
 
 const QuizImg = styled.div`
   margin: auto;
@@ -12,7 +13,7 @@ const QuizImg = styled.div`
 
 function QuizLogo() {
   return (
-    <div><QuizImg><a href="/"><img src="/100.png" alt="" /></a></QuizImg></div>
+    <div><QuizImg><Link href="/"><img src="/100.png" alt="" /></Link></QuizImg></div>
   );
 }
 export default QuizLogo;

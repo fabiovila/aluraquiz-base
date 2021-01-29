@@ -9,6 +9,7 @@ import QuizContainer from '../../QuizContainer';
 import Button from '../../Button';
 import BoxBlink from '../../BoxBlink';
 import AlternativesForm from '../../AlternativesForm';
+import BackLinkArrow from '../../BackLinkArrow';
 
 function LoadingWidget({ externalQuestions }) {
   return (
@@ -84,7 +85,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        {/* <BackLinkArrow href="/" /> */}
+        <BackLinkArrow href="/"/>
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
