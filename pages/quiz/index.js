@@ -10,6 +10,7 @@ import Button from '../../src/components/Button';
 import BoxBlink from '../../src/components/BoxBlink';
 import AlternativesForm from '../../src/components/AlternativesForm';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
+import { motion } from 'framer-motion';
 
 function LoadingWidget() {
   return (
@@ -126,7 +127,15 @@ function QuestionWidget({
             const isSelected = selectedAlternative === alternativeIndex;
             return (
               <Widget.Topic
-                as="label"
+                transition={{ delay: alternativeIndex / 10, duration: 0.5 }}
+                as={motion.section}
+                variants={{
+                  show: { opacity: 1, y: '0' },
+                  hidden: { opacity: 0, y: '100%' },
+                }}
+                initial="hidden"
+                animate="show"
+                // as="label"
                 key={alternativeId}
                 htmlFor={alternativeId}
                 data-selected={isSelected}
