@@ -13,7 +13,6 @@ import QuizContainer from '../src/components/QuizContainer';
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
-  const [quizes] = React.useState(db.external);
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
@@ -44,11 +43,22 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1>Quizes da galera</h1>
-            
-            {/* {quizes.map((link, index) =>(
-              <Button>{link}</Button>
-            ))} */}
-            
+            <ul>
+              {db.external.map((linkExterno) => {
+                const [projectName, githubUser] = linkExterno
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+                return (
+                  <li>
+                    <Widget.Topic href={linkExterno}>
+                      {`${githubUser}/${projectName}`}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
+            </ul>
           </Widget.Content>
         </Widget>
         <Footer />
