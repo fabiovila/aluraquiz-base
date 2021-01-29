@@ -1,17 +1,16 @@
 import React from 'react';
+import QuizScreen from '../../src/components/screens/Quiz'
 
-export default function QuizDaGaleraPage(props) {
+export default function QuizDaGaleraPage({dbExterno}) {
   // Situação normal do React. Roda no browser
   // const[db,setDb] = React.useState({})
   // React.useEffect(() => { fetch ...});
-
+  console.log("QuizDaGaleraPAge:", dbExterno);
   return (
-    <div>
-      Desafio da próxima aula
-      <pre style={{color: 'black'}}>
-          {JSON.stringify(props,null,4)}
-      </pre>
-    </div>
+    
+      <QuizScreen externalQuestions={dbExterno}/>
+
+    
   );
 }
 
@@ -30,7 +29,7 @@ export async function getServerSideProps(context) {
       console.error(err);
     });
 
-  console.log(dbExterno);
+  //console.log(dbExterno);
 
   return {
     props: {
